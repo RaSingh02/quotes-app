@@ -4,25 +4,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        >
         <title>Quote App</title>
     </head>
     <body>
-        <main>
+        <main id="background" class="img">
             <section>
-                <h1>Random Quote Generator</h1>
-                <blockquote>
-                    "Quote"
-                </blockquote>
-                <cite>
-                    Author
-                </cite>
-                <button id="generate" onclick="generate()">
+                <h1 class="animate__animated animate__jackInTheBox">Random Quote Generator</h1>
+                <blockquote></blockquote>
+                <cite></cite>
+                <button id="generate" onclick="generate(), gen_background()" class="animate__animated animate__slideInRight">
                     Generate
+                </button>
+                <button id="previous" onclick="previous()" class="animate__animated animate__slideInLeft">
+                    Previous
                 </button>
             </section>
         </main>
         <!-- Load Styles -->
-        <script src="js/main.js" charset="utf-8"></script>
         <script src="js/quotes.js " charset="utf-8"></script>
+        <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>
